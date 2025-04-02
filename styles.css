@@ -1,0 +1,177 @@
+html{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4e8;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.banner{
+    background-image: url("Images/photo-1483129804960-cb1964499894.jpeg");
+    color: black;
+    padding-top: 4rem;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-text h1, h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.banner-text p{
+    font-size: 1.5rem;
+}
+
+.portifólio h1{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-portifólio{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 20rem;
+}
+
+figure{
+    flex: 1;
+    height: 90%;
+    width: 30%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.CEO h1{
+    margin-top: 4rem;
+}
+
+.container-CEO{
+    position: relative;
+    height: 30rem;
+    /* background-image: url(Images/ceo-background.jpg); // removed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4e8;
+}
+
+.container-CEO::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/ceo-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.container-CEO figure{
+    height: 80%;
+    width: 30%;
+}
+
+.container-CEO img{
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-CEO figure p {
+    text-align: center;
+}
+
+.container-CEO figcaption{
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+        height: 3rem;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .banner {
+        height: 20rem;
+    }
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+    .banner-text p {
+        font-size: 1rem;
+    }
+    .container-portifólio {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .container-portifólio figure {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .container-CEO {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .container-CEO figure {
+        width: 90%;
+        height: auto;
+    }
+}
