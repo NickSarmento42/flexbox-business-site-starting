@@ -178,4 +178,8 @@ figcaption{
     .container-CEO figure p {
         padding: 0 1rem; /* Added padding to ensure the paragraph fits its container */
     }
+
+    .container-CEO img {
+        justify-self: center; 
+    }
 }
